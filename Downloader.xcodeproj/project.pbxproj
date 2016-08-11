@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0B7E8D111D586DD8004D20AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E8D101D586DD8004D20AD /* AppDelegate.swift */; };
-		0B7E8D131D586DD8004D20AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E8D121D586DD8004D20AD /* ViewController.swift */; };
+		0B7E8D131D586DD8004D20AD /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E8D121D586DD8004D20AD /* DownloadViewController.swift */; };
 		0B7E8D161D586DD8004D20AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7E8D141D586DD8004D20AD /* Main.storyboard */; };
 		0B7E8D181D586DD8004D20AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7E8D171D586DD8004D20AD /* Assets.xcassets */; };
 		0B7E8D1B1D586DD8004D20AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7E8D191D586DD8004D20AD /* LaunchScreen.storyboard */; };
 		0B7E8D261D586DD8004D20AD /* DownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E8D251D586DD8004D20AD /* DownloaderTests.swift */; };
 		0B7E8D311D586DD8004D20AD /* DownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E8D301D586DD8004D20AD /* DownloaderUITests.swift */; };
+		0B7E8D3F1D588ED8004D20AD /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E8D3E1D588ED8004D20AD /* ShowImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		0B7E8D0D1D586DD8004D20AD /* Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Downloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7E8D101D586DD8004D20AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B7E8D121D586DD8004D20AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B7E8D121D586DD8004D20AD /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		0B7E8D151D586DD8004D20AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B7E8D171D586DD8004D20AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B7E8D1A1D586DD8004D20AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		0B7E8D2C1D586DD8004D20AD /* DownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7E8D301D586DD8004D20AD /* DownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderUITests.swift; sourceTree = "<group>"; };
 		0B7E8D321D586DD8004D20AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B7E8D3E1D588ED8004D20AD /* ShowImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				0B7E8D101D586DD8004D20AD /* AppDelegate.swift */,
-				0B7E8D121D586DD8004D20AD /* ViewController.swift */,
+				0B7E8D121D586DD8004D20AD /* DownloadViewController.swift */,
 				0B7E8D141D586DD8004D20AD /* Main.storyboard */,
+				0B7E8D3E1D588ED8004D20AD /* ShowImageViewController.swift */,
 				0B7E8D171D586DD8004D20AD /* Assets.xcassets */,
 				0B7E8D191D586DD8004D20AD /* LaunchScreen.storyboard */,
 				0B7E8D1C1D586DD8004D20AD /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7E8D131D586DD8004D20AD /* ViewController.swift in Sources */,
+				0B7E8D131D586DD8004D20AD /* DownloadViewController.swift in Sources */,
+				0B7E8D3F1D588ED8004D20AD /* ShowImageViewController.swift in Sources */,
 				0B7E8D111D586DD8004D20AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = practo.Downloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -416,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = practo.Downloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
